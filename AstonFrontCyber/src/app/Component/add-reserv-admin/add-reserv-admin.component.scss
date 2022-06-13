@@ -1,0 +1,55 @@
+@import '../../Component/button/button.component.scss' ;
+.ReservForm{
+    background: url(../../../assets/Images/pexels-antonio-batinić-4164418.jpg);
+    background-size: contain no-repeat;
+
+    width:100% ; 
+    height:100%; 
+}
+
+.ReservForm1{ 
+    backdrop-filter: blur(9px) ; 
+    background-color: rgba(0, 0, 0, 0.10);
+    width:100% ; 
+    height:100%; 
+}
+
+.reservationForm{ 
+    margin-left: 710px ; 
+    padding-top: 250px; 
+    color: #FBE790;
+    text-shadow: 2px 2px 0 black; 
+    max-width: 50%;
+    font-size: 25px;
+    font-family: 'Khula', sans-serif;
+
+} 
+.formLabel{ 
+    margin-right:50px;
+    font-family: 'Libre Franklin', sans-serif; 
+    font-weight: 900;
+    letter-spacing: 2px;
+
+}
+
+.FormTitle{ 
+    color: #FBE790;
+    margin-bottom: 5%;
+    font-size: 45px;
+    font-family: 'Libre Franklin', sans-serif; 
+    font-weight: 900;
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 0 black, 4px 4px 0 #EFD6EB;
+} 
+
+.BaseButton{ 
+    margin-top: 60px;
+    width: 150px; 
+    height: 50px;
+    
+} 
+.BaseButton:active {
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
+  }
+

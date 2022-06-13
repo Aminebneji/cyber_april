@@ -1,0 +1,45 @@
+
+<div class="ProfileForm">
+    <div class="reservationForm">
+<div class="SwapScreenProfile" >
+
+<div class="ProfilForm1 ">
+    <div class="ProfilForm"> 
+
+        <h1 class="Title">Profil</h1>
+    <p>
+        <label class="formLabel">Nom</label>
+        <input type="text" [(ngModel)]="firstName" />
+    </p>
+    <p>
+        <label class="formLabel">Prénom</label>
+        <input type="text" [(ngModel)]="lastName" />
+    </p>
+    <p>
+        <label class="formLabel">Nom d'utilisateur</label>
+        <input type="text" [(ngModel)]="userName" />
+    </p>
+    <p>
+        <label class="formLabel">Email</label>
+        <input type="text" [(ngModel)]="email" />
+    </p>
+    <p>
+        <label class="formLabel">Numéro de Téléphone</label>
+        <input type="text" [(ngModel)]="phoneNumber" />
+    </p>
+    <p>
+        <label class="formLabel">Mot de passe</label>
+        <input type="password" [(ngModel)]="password" />
+    </p>
+    <p>
+        <label class="formLabel">Confirmation Mot de passe</label>
+        <input type="password" [(ngModel)]="confirmPassword" />
+    </p>
+
+    <button  class="BaseButton" (click)="updateUser()">Mettre à jour</button>
+    <button class="BaseButton"routerLink="reserv">Reservation</button> 
+    
+</div> 
+</div>
+</div>
+</div>

@@ -1,0 +1,16 @@
+<div class="ReservForm">
+    <div class="ReservForm1">
+        <form [formGroup]="loginForm" class="reservationForm" (ngSubmit)="login()">
+            <label class="FormTitle">Login</label>
+            <p>
+                <label class="formLabel">Email</label>
+                <input formControlName="email" type="text" />
+            </p>
+            <p>
+                <label class="formLabel">Mot de Passe</label>
+                <input formControlName="password" type="password" />
+            </p>
+            <button class="BaseButton" type="submit">Login</button>
+        </form>
+    </div>
+</div>

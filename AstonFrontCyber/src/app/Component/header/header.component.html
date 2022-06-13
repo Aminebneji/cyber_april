@@ -1,0 +1,33 @@
+<nav>
+    <div class="container">
+        <!-- <h1>Cybercafé</h1> -->
+
+        <h1 class="Gamin">GAMIN'</h1>
+        <img src="../../../assets/Images/pxArt__1_-removebg-preview.png" class="logo" />
+        <h2 class="Home">HOME</h2>
+        <div class="menu">
+            <a routerLink="" class="Onglets">Home</a>
+            <a routerLink="addReserv" class="Onglets">Reservation</a>
+            <a routerLink="offre" class="Onglets">Nos PC</a>
+            <button class="BaseButton" *ngIf="!isLogged" (click)="OpenDialog()">Connexion</button>
+            <button class="BaseButton" *ngIf="isLogged" (click)="GoToProfile()">Profil</button>
+            <button class="BaseButton" *ngIf="!isLogged" (click)="GoToRegister()">S'inscrire </button>
+            <button class="BaseButton" *ngIf="isLogged" (click)="Logout()">Logout</button>
+        </div>
+        <button class="hamburger" (click)="ButtonHamburgerState()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</nav>
+
+<nav class="mobile-nav">
+    <a routerLink="">Home</a>
+    <a routerLink="addReserv">Reservation</a>
+    <a routerLink="listPC">Nos PC</a>
+    <button class="BaseButton" *ngIf="!isLogged" (click)="OpenDialog()">Connexion</button>
+    <button class="BaseButton" *ngIf="isLogged" (click)="GoToProfile()">Profil</button>
+    <button class="BaseButton" *ngIf="!isLogged" (click)="GoToRegister()">S'inscrire </button>
+    <button class="BaseButton" *ngIf="isLogged" (click)="Logout()">Logout</button>
+</nav>

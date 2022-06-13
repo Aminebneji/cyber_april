@@ -1,0 +1,53 @@
+
+ <div class="adminFormPc">
+
+  <div class="adminFormPc1">
+    <form class="pcForm" [formGroup]="pcForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label class ="formLabel" for="formGroupExampleInput">PC</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Saisir le nom du PC" formControlName="name">
+        </div>
+        <div class="form-group">
+          <label class ="formLabel" for="formGroupExampleInput2">Serie</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Saisir le numéro de serie" formControlName="serial">
+        </div>
+        <div class="form-group">
+            <label class ="formLabel" for="formGroupExampleInput3">Image</label>
+            <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Saisir l'url de l'image" formControlName="pcImage">
+        </div>
+        <div class="formGroupExampleInput4">
+            <label class ="formLabel"  for="inputCpu">CPU</label>
+            <select id="inputCpu" class="form-control" formControlName="cpu">
+              <option *ngFor="let gpu of compoClass" [ngValue]="gpu">{{gpu}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class ="formLabel" for="formGroupExampleInput5">Ram</label>
+            <input type="text" class="form-control" id="formGroupExampleInput5" placeholder="Saisir la capacité de la RAM" formControlName="ramCapacity">
+        </div>
+        <div class="formGroupExampleInput6">
+            <label class ="formLabel" for="inputGpu">GPU</label>
+            <select id="inputGpu" class="form-control" formControlName="gpu">
+              <option *ngFor="let gpu of compoClass" [ngValue]="gpu">{{gpu}}</option>
+            </select>
+        </div>
+        <div class="formGroupExampleInput7">
+            <label class ="formLabel" for="inputEcran">Résolution écran</label>
+            <select id="inputEcran" class="form-control" formControlName="screen">
+              <option *ngFor="let type of screenRes " [ngValue]="type">{{type}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class ="formLabel"  for="formGroupExampleInput8">Nombre d'ecran</label>
+            <input type="number" class="form-control" id="formGroupExampleInput5" placeholder="Saisir le nombre d'écran" formControlName="screenAmount">
+        </div>
+        <div class="form-group">
+            <label class ="formLabel"  for="formGroupExampleInput9">Prix</label>
+            <input type="number" class="form-control" id="formGroupExampleInput5" placeholder="Saisir le prix par heure de location" formControlName="price">
+        </div>
+
+        <button type="submit" class="BaseButton">Ajouter</button>
+      </form>
+  </div> 
+</div>
+

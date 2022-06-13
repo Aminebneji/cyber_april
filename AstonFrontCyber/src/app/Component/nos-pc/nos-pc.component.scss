@@ -1,0 +1,71 @@
+@import '../button/button.component.scss' ; 
+
+
+
+.page{ 
+    padding-top: 50px;
+    background-image: url("../../../assets/Images/pexels-rodnae-productions-7915265.jpg") ;  
+    background-size: contain no-repeat;
+    width:100% ; 
+    height:100%; 
+}
+
+.NosPCBody
+{
+    padding-top: 150px;
+    display: flex;
+    backdrop-filter: blur(9px) ; 
+    background-color: rgba(0, 0, 0, 0.10);
+    width:100%;
+    padding-bottom: 150px;
+
+}
+
+.card {
+    padding: 10px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transform-origin: top;
+    transition: all .3s;
+
+    &:hover {
+        transform: scale(0.9) translateY(-3px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    }
+
+} 
+
+.card__title{ 
+      color: #FBE790;
+  text-shadow: 2px 2px 0 black;
+  padding-top: 3%;
+  margin-left: 26%;
+  text-align: center;
+  max-width: 50%;
+  font-size: 20px;
+  font-family: 'Khula', sans-serif;
+
+  }
+
+  .cardTop{
+    text-align: center;
+    color: #FBE790;
+    font-size: 45px;
+    font-family: 'Libre Franklin', sans-serif; 
+    font-weight: 900;
+    letter-spacing: 5px; 
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 0 black, 4px 4px 0 #7077D8;
+
+}
+
+.BaseButton{  
+    
+       height:35px;
+       font-size: 19px;    
+    
+    &:active {
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
+  }
+} 

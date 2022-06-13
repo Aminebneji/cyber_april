@@ -1,0 +1,48 @@
+@import '../button/button.component.scss';
+
+.body{ 
+  background-color: #EFD6Eb;
+}
+
+.title{ 
+  font-family: 'Libre Franklin'; 
+  color: #7077D8;
+  text-align: center; 
+  font-size: 38px;
+  font-weight: 900;
+  letter-spacing: 2px; 
+  text-shadow: 2px 2px 0 black, 4px 4px 0 black;
+}
+  .inputMail{ 
+    margin: 15px; 
+    display: block;
+    
+  }     
+
+  .inputPassword{
+    margin: 15px; 
+    
+  } 
+
+  .BaseButton{ 
+  
+   margin-left: 25%;
+   
+  } 
+
+   
+  .BaseButton:active {
+        box-shadow: 0 5px black;
+        transform: translateY(4px);
+      }
+  
+
+  @media all and (max-width : 600px ){ 
+   .inputMail ,  .inputPassword{ 
+      width :100%;  
+      margin : 0; 
+   }
+   .BaseButton{ 
+     margin-left: 135px;
+   }
+  }

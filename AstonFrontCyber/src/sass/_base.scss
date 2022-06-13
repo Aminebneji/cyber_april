@@ -1,0 +1,30 @@
+:root{
+    --backgroundNav: #7077D8;
+    --textOnglets: #EFD6EB;
+    --textOngletsHover: #FBE790;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.containerCards {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+@media(max-width:1090px){
+    .containerCards {
+        width: 80%;
+        margin: 0 auto;   
+    } 
+}
+
+
+

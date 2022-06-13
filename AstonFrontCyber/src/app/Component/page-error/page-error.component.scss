@@ -1,0 +1,57 @@
+
+
+
+
+.HomePage{ 
+    padding-top: 50px;
+    background-image: url("../../../assets/Images/pexels-yan-krukov-9072394.jpg") ;  
+    background-size: contain;
+    width:100% ; 
+    height:100%; 
+
+} 
+
+.HomePageContent{ 
+    width:100% ; 
+    height:100%;
+    margin-bottom:15%;
+    backdrop-filter: blur(3px) ; 
+    background-color: rgba(0, 0, 0, 0.075);
+} 
+
+.Titre{
+    color: #FBE790;
+    margin-left: 50%;
+    padding-top: 5%;
+    font-size: 45px;
+    font-family: 'Libre Franklin', sans-serif; 
+    font-weight: 900;
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 0 black, 4px 4px 0 #EFD6EB;
+
+}
+
+.SousTitre{ 
+    color: #FBE790;
+    margin-left: 25%;
+    padding-top: 2%;
+    font-size: 33px;
+    font-family: 'Amiri', sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 0 black, 4px 4px 0 #EFD6EB;
+
+}
+
+.Texte{ 
+    color: #FBE790;
+    text-shadow: 2px 2px 0 black;
+    padding-top: 3%;
+    margin-left: 26%;
+    text-align: center;
+    max-width: 50%;
+    font-size: 25px;
+    font-family: 'Khula', sans-serif;
+
+} 
+

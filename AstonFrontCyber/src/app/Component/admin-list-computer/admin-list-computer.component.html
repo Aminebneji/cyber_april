@@ -1,0 +1,26 @@
+
+<table class="Tab_head" >
+    <th>id</th>
+    <th>Name</th>
+    <th>Gpu class</th>
+    <th>Cpu class</th>
+    <th></th>
+</table>
+
+<table *ngFor="let pc of PcList">
+<td>{{pc.id}}</td>  
+<td>{{pc.name}}</td>
+
+</table>
+
+
+<!-- id: number;
+name: string;
+serial: string;
+pcImage : string;
+cpu: componentClass;
+ramCapacity: string;
+gpu: componentClass;
+screen: ScreenResolution;
+screenAmount: number;
+price: number; -->

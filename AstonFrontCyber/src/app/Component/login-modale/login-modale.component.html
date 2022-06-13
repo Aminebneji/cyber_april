@@ -1,0 +1,14 @@
+<!-- here is the content of the modal 
+    wich be runned by the "login-modale.component" -->
+<div class="body" *ngIf="!loggedIn">
+<h2 class="title">Connexion</h2>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <input class="inputMail" type="email" formControlName="email" value="BobSupra@mail.com" matInput placeholder="Ex. example.mail@user.com" >
+      <input class="inputPassword" type="password" formControlName="password"  value="password" matInput placeholder="Ex. Pa$$W0rd">
+      <button class="BaseButton" type="submit" >Se Connecter</button>
+</form> 
+</div>
+<div class="body" *ngIf="loggedIn">
+    <h1>Vous êtes Connecter</h1>
+</div>
+

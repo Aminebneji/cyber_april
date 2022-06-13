@@ -1,0 +1,9 @@
+
+
+
+<button id="BaseButton" mat-button [matMenuTriggerFor]="menu" *ngIf="state" >Admin</button>
+<mat-menu #menu="matMenu" id="menu">
+  <button (click)="moveToAdminPC()" id="menu"mat-menu-item>PC</button>
+  <button routerLink="listUserAdmin" id="menu" mat-menu-item>Users</button>
+  <button routerLink="listReservations" id="menu" mat-menu-item>Reservations</button>
+</mat-menu>

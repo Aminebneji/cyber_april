@@ -1,0 +1,36 @@
+<div class="ReservForm">
+    <div class="ReservForm1">
+        <form [formGroup]="reservationForm" class="reservationForm" (ngSubmit)="OnSubmit()">
+            <label class="FormTitle">Reservation</label>
+            <p>
+                <label class="formLabel">Pc type</label>
+                <select formControlName="PcType">
+                    <option >Bureautique</option>
+                    <option >Gaming</option>
+                    <option >Creation</option>
+                    <option >Competition</option>
+                </select>
+            </p>
+            <p>
+                <label class="formLabel">screen number</label>
+                <input formControlName="ScreenNumber" type="text" />
+            </p>
+            <p>
+                <label class="formLabel">Screen type</label>
+                <select formControlName="ScreenType">
+                    <option *ngFor="let type of screenType" [ngValue]="type">{{type}}</option>
+                </select>
+            </p>
+            <p>
+                <label class="formLabel">Date Début</label>
+                <input formControlName="StartDate" type="datetime-local" />
+            </p>
+            <p>
+                <label class="formLabel">Date Fin</label>
+                <input formControlName="EndDate" type="datetime-local" />
+            </p>
+            <button  class ="BaseButton" type="submit">Réserver</button>
+        </form>
+    </div>
+</div>
+

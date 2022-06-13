@@ -1,0 +1,53 @@
+.BaseButton{ 
+
+    background-color: #7077D8 ;
+    color: #FBE790; 
+    font-family: 'Libre Franklin';
+&:hover{ 
+    background-color: #AA95C7 ;
+    color: #FEF3CC; 
+
+}    
+
+&:active{
+    background-color: #535de2 ;
+    color: #f7cd15; 
+    
+}
+} 
+
+.DisabledButton{
+
+    background-color:#A3A6D7;
+    color:black;
+    font-family: 'Libre Franklin';
+    
+&:hover{
+    background-color: gray;
+    color: whitesmoke;
+}   
+ 
+&:active{
+    background-color: #000000 ;
+    color: #ebebeb; 
+    
+}
+} 
+
+.RedButton{ 
+    background-color: #F45050 ; 
+    color:white;
+    font-family: 'Libre Franklin';
+    
+&:hover{
+        background-color: #ec8080;
+        color: white;
+    }   
+
+&:active{
+        background-color: #f10e0e ;
+        color: white; 
+        
+    }
+} 
+

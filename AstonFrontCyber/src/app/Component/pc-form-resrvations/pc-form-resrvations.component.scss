@@ -1,0 +1,90 @@
+.containerResFormGet{
+    padding-top: 100px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+table {
+    width : 100% ;
+ }
+
+ button{
+     margin: 5px;
+ } 
+ @import '../button/button.component.scss' ; 
+
+
+ .containerPcFormGet{
+     padding-top: 100px;
+     width: 80%;
+     background-color: #7077D8;
+     margin: 0 auto;
+ }
+ 
+ table {
+     background-color: #7077D8 ;
+     width : 100% ;
+  }
+ 
+  button{
+      margin: 5px;
+  } 
+ 
+ 
+ .list-reserv{ 
+     background-color: #7077D8;
+     width: 100%;
+     height: 100%;
+ }
+
+ table {
+     width : 100% ;
+     background-color: #EFD6EB ;
+  }
+ 
+ .section{ 
+     margin: 25% ;
+ 
+ } 
+ 
+ .th{ 
+     color: #FBE790;
+     font-size: 23px;
+     font-family: 'Amiri', sans-serif; 
+     text-shadow: 2px 2px 0 black, 4px 4px 0 #EFD6EB;
+ }
+ .td{ 
+     color: #7077D8;
+     font-size: 13px;
+     font-family: 'Amiri', sans-serif; 
+     text-shadow: 0.5px 0.5px 0 black, 0.5px 0.5px 0 black;
+ }
+ 
+ 
+  button{
+      margin: 5px;
+  }  
+ 
+ .BaseButton
+     { 
+         display: inline;
+         background-color: #7077D8;
+         color:#FBE790;
+         margin-left: 15px;
+         width: 150px;
+         border: #FBE790 solid 5px; 
+         font-size: 25px;
+         font-weight: 600;
+         font-family: 'Amiri';
+         text-decoration: none; 
+         box-shadow: 0 5px #00050091;
+     } 
+        
+     .BaseButton:active {
+             background-color: black;
+             box-shadow: 0 5px black;
+             transform: translateY(4px);
+           }
+  
+ 
+ 
